@@ -1,2 +1,2 @@
-MAVEN_OPTS=-Dmaven.user-settings=configuration/settings.xml
+mvn='mvn -s configuration/settings.xml'
 ARTIFACT_COPY_ARGS=-p -r lib/ *-runner.jar
