@@ -9,7 +9,6 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import java.util.List;
 
-
 @Path("/api")
 @Produces("application/json")
 @Consumes("application/json")

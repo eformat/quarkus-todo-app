@@ -11,14 +11,14 @@ import javax.ws.rs.core.MediaType;
 @Path("/podhost")
 @Produces(MediaType.APPLICATION_JSON)
 public class PodHostResource {
-  private String HOSTNAME =
-  System.getenv().getOrDefault("HOSTNAME", "unknown");
+    private String HOSTNAME =
+            System.getenv().getOrDefault("HOSTNAME", "unknown");
 
-  private int count = 0;
+    private int count = 0;
 
-  @GET
-  public String getInformation() {
-    return "Hostv3: " + HOSTNAME + " " + count++;
-  } 
-  
+    @GET
+    public String getInformation() {
+        return "Hostv3: " + HOSTNAME + " " + count++;
+    }
+
 }

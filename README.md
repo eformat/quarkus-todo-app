@@ -3,12 +3,11 @@
 
 ## Prerequisites
 
-* You need the _master_ branch of Quarkus (or Quarkus 0.13.0+)
-
+* You need the _master_ branch of Quarkus (or Quarkus 0.15.0+)
 
 ## Database
 
-Run:
+Run Locally:
 
 ```bash
 docker run --ulimit memlock=-1:-1 -it --rm=true --memory-swappiness=0 \
@@ -18,6 +17,8 @@ docker run --ulimit memlock=-1:-1 -it --rm=true --memory-swappiness=0 \
 ```
 
 ## Application
+
+Run Locally:
 
 ```bash
 mvn compile quarkus:dev
