@@ -1,5 +1,6 @@
 # TODO Application with Quarkus
 
+![todos.png](images/todos.png)
 
 ## Prerequisites
 
