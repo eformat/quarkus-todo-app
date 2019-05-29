@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kubectl scale --replicas=3 deployment/my
+oc scale --replicas=5 dc/todo-app
