@@ -1,2 +1,2 @@
-HOME=configuration
+MAVEN_OPTS='-gs configuration/settings.xml'
 ARTIFACT_COPY_ARGS=-p -r lib/ *-runner.jar
