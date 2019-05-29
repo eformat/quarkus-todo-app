@@ -56,11 +56,11 @@ oc new-build --name=todo-app \
     --dockerfile=$'FROM registry.access.redhat.com/ubi8/ubi:8.0\nCOPY application /application\nCMD /application -Xmx8M -Xms8M -Xmn8M\nEXPOSE 8080' \
     --allow-missing-imagestream-tags
 
-# wait for the build to finish (web console or `oc logs -f bc/todo-app`)
+-- wait for the build to finish (web console or `oc logs -f bc/todo-app`)
 oc new-app todo-app
 oc expose svc todo-app
 
-# handy db commands
+-- handy db commands
 oc get pods -lapp=postgresql-persistent | awk '{print }'
 oc rsh $(oc get pods -lapp=postgresql-persistent --template='{{range .items}}{{.metadata.name}}{{end}}')
 sh-4.2$ psql -h localhost -d rest-crud -U postgres
