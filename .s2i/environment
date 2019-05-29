@@ -1,2 +1,2 @@
-MAVEN_OPTS=--settings configuration/settings.xml
+MAVEN_OPTS='--settings configuration/settings.xml'
 ARTIFACT_COPY_ARGS=-p -r lib/ *-runner.jar
