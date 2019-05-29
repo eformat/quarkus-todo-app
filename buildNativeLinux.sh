@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export GRAALVM_HOME=~/tools/graalvm-ce-1.0.0-rc15/Contents/Home/
+export GRAALVM_HOME=/opt/graalvm-ce-1.0.0-rc16/
 
 # Mac Native
 # mvn package -Pnative
