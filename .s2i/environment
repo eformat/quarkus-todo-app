@@ -1,2 +1,2 @@
-alias mvn='mvn -s configuration/settings.xml'
+HOME=configuration
 ARTIFACT_COPY_ARGS=-p -r lib/ *-runner.jar
