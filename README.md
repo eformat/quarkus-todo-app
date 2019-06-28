@@ -19,13 +19,20 @@ docker run --ulimit memlock=-1:-1 -it --rm=true --memory-swappiness=0 \
 
 ## Application
 
-Run Locally:
+Run locally Java:
 
 ```bash
 mvn compile quarkus:dev
 ```
 
 Open: http://localhost:8080/
+
+Run locally Native:
+
+```
+mvn package -Pnative
+./target/todo-backend-1.0-SNAPSHOT-runner
+```
 
 ## OpenShift
 
@@ -57,6 +64,7 @@ oc new-build --name=todo-app \
     --allow-missing-imagestream-tags
 
 -- wait for the build to finish (web console or `oc logs -f bc/todo-app`)
+#oc new-app --image-stream=quarkus-todo-app/todo-app:latest
 oc new-app todo-app
 oc expose svc todo-app
 
