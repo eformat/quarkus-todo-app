@@ -30,7 +30,7 @@ Open: http://localhost:8080/
 Run locally Native:
 
 ```
-mvn package -Pnative
+mvn clean package -Pnative -DskipTests -Dnative-image.docker-build=true
 ./target/todo-backend-1.0-SNAPSHOT-runner
 ```
 
